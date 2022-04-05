@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<title>全球抗疫 共渡难关</title>
+<link href="css/animate.min.css" rel="stylesheet" type="text/css" />
+<link href="css/aos.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/mr-bedfort:n4:default;allan:n7:default.js" type="text/javascript"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/unslider.min.js"></script>
+<script src="js/useanimation.js"></script>
+<script src="js/particle.js"></script>
+<script src="js/xs.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script src="js/aos.js"></script>
+	<script src="js/scroll.js"></script>
+<link rel="stylesheet" href="css/honver.css">
+<!--轮播2-->
+	<link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-ui-1.8.6.core.widget.js"></script>
+    <script src="js/jqueryui.bannerize.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#banners').bannerize({
+                shuffle: 1,
+                interval: "5"
+            });
+            $(".ui-line").hover(function(){
+                $(this).addClass("ui-line-hover");
+                $(this).find(".ui-bnnerp").addClass("ui-bnnerp-hover");
+            },function(){
+                $(this).removeClass("ui-line-hover");
+                $(this).find(".ui-bnnerp").removeClass("ui-bnnerp-hover");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="topz mg2" id="menu">
+	<div class="top mg">
+		<div class="topl f"><a href=""><img align="absmiddle" src="images/title.png" /></a></div>
+		<div class="topr r xi24 bai">
+			<ul>
+				<li><a href="index.html">首页</a></li>
+				<li><a href="gyyq.html">关于疫情</a></li>
+				<li><a href="kyyx.html">抗疫英雄</a></li>
+				<li><a href="wyzp.html">文艺作品</a></li>
+				<li><a href="ssdt.html">实时动态</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="banner1 mg2"></div>
+<div class="banner" id="b04">
+
+    <ul class="slide">
+
+        <li><img class="sliderimg" src="images/slide1.png" alt="" width="100%" ></li>
+
+        <li class="slide"><img class="sliderimg" src="images/slide2.png" alt="" width="100%" ></li>
+
+        <li class="slide"><img class="sliderimg" src="images/slide3.png" alt="" width="100%" ></li>
+
+        <li class="slide"><img class="sliderimg" src="images/slide4.png" alt="" width="100%" ></li>
+
+        <li class="slide"><img class="sliderimg" src="images/slide5.png" alt="" width="100%" ></li>
+
+    </ul>
+
+    <a href="javascript:void(0);" class="unslider-arrow04 prev"><img class="arrow" id="al" src="images/arrowl.png" alt="prev" width="20" height="35"></a>
+
+    <a href="javascript:void(0);" class="unslider-arrow04 next"><img class="arrow" id="ar" src="images/arrowr.png" alt="next" width="20" height="37"></a>
+
+</div>
+<script>
+
+function imgReload()
+
+{
+
+	var imgHeight = 0;
+
+	var wtmp = $("body").width();
+
+	$("#b04 ul li").each(function(){
+
+        $(this).css({width:wtmp + "px"});
+
+    });
+
+	$(".sliderimg").each(function(){
+
+		$(this).css({width:(wtmp + "px")*0.8});
+
+		imgHeight = $(this).height();
+
+	});
+
+}
+
+
+
+$(window).resize(function(){imgReload();});
+
+
+
+$(document).ready(function(e) {
+
+	imgReload();
+
+    var unslider06 = $('#b04').unslider({
+
+		dots: true,
+
+		fluid: true
+
+	}),
+
+	data06 = unslider06.data('unslider');
+
+	
+
+	$('.unslider-arrow04').click(function() {
+
+        var fn = this.className.split(' ')[1];
+
+        data06[fn]();
+
+    });
+
+});
+</script>
+<div class="con mg">
+	<div  class="outbox" id="ouutbox1" aos="fade-zoom-in"><div class="conl f bai xi18 tm">中央部署</div>
+		<div class="line"></div>
+		<div class="innertext"><ul>
+		<li>新闻1<p  class="time">时间1</p></li>
+		<li>新闻2<p class="time">时间1</p></li>
+  <li>新闻3<p class="time">时间1</p></li></ul></div></div>
+	<div class="conl f bai xi18 tm block"></div>
+	<div class="outbox" aos="fade-zoom-in"><div class="conl f bai xi18 tm">省部动态</div>
+		<div class="line"></div><div class="innertext"><ul>
+		<li>新闻1<p class="time">时间1</p></li>
+		<li>新闻2<p class="time">时间1</p></li>
+		<li>新闻3<p class="time">时间1</p></li></ul></div></div>
+	<div class="conl f bai xi18 tm block"></div>
+	<div class="outbox" aos="fade-zoom-in"><div class="conl f bai xi18 tm">学校新闻</div>
+		<div class="line"></div><div class="innertext"><ul>
+		<li>新闻1<p class="time">时间1</p></li>
+		<li>新闻2<p class="time">时间1</p></li>
+		<li>新闻3<p class="time">时间1</p></li></ul></div></div>	
+</div>
+<div class="con mg down" aos="fade-zoom-in">
+	<div class="line down" id="leftline" aos="fade-left"></div>
+	<span class="conl f bai xi18 tm">工作进展</span>
+	<div class="line down" id="rightline" aos="fade-right"></div>
+<!--	<div class="slide3">-->
+		<div class="warrper">
+
+       <!--content-->
+       <div class="content">
+           <!--企业动态-->
+           <div class="index-new w1200 mt30">
+               <div class="indexadd mt50 mb60">
+                   <div id="banners" class="ui-banner">
+                       <ul class="ui-banner-slides">
+                           <li><a href=""><img src="images/simgd.jpg" alt="NEW! Get Heart Smart With Essential Omega III" title="NEW! Get Heart Smart With Essential Omega III"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="NEW! Support Your Skin on a Cellular Level" title="NEW! Support Your Skin on a Cellular Level"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="NEW! Indulge in Luxury With Royal Spa" title="NEW! Indulge in Luxury With Royal Spa"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="NEW! Get paid to shop with Cashback" title="NEW! Get paid to shop with Cashback"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="NEW! Radiation Protection at its Best" title="NEW! Radiation Protection at its Best"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="Unleash the Power of Isotonix Today" title="Unleash the Power of Isotonix Today"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="Motives is Changing the Face of UK Beauty" title="Motives is Changing the Face of UK Beauty"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="Get a Taste of Spring" title="Get a Taste of Spring"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="Try Isotonix OPC-3 Today for Better Health" title="Try Isotonix OPC-3 Today for Better Health"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="Feel like a princess with Royal Spa" title="Feel like a princess with Royal Spa"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="Stay energised with Isotonix for the Queen's Jubilee" title="Stay energised with Isotonix for the Queen's Jubilee"/></a></li>
+                           <li><a href=""><img src="images/simgd.jpg" alt="WorldStores - Top Brands Delivered Next Day" title="WorldStores - Top Brands Delivered Next Day"/></a></li>
+                       </ul><!--ui-banner-slides end-->
+                       <ul class="ui-banner-slogans">
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                           <li class="ui-line">
+                               <div class="ullinehover">
+                                   <div class="ui-bnnerimg floatLeft">
+                                       <img src="images/simg.jpg" alt="" width="103"/>
+                                   </div>
+                                   <div class="ui-bnnerp floatRight">
+                                       <h3 style="margin-top: 8px;">设计院开展扶贫济困募捐活动</h3>
+                                       <p>根据总局文明委《关于开展扶贫济困募捐活动的通知》精神，在总局机关和直属单位
+                                           开展扶贫济困募捐活动。
+                                       </p>
+                                   </div>
+                               </div>
+                           </li>
+                       </ul><!--ui-banner-slogans end-->
+                   </div>
+               </div>
+           </div>
+           <!--企业动态 end-->
+       </div>
+       <!--content end-->
+
+
+   </div>
+	</div>
+	<div class="concern">
+	<div class="concernbox" aos="fade-zoom-in"><span class="concerntext">情系疫区</span></div>
+	<div class="container" aos="fade-zoom-in">
+		<div class="scroll">
+			<ul><li><pre>文字</pre></li>
+				<li><span>文字</span></li>
+				<li><span>文字</span></li>
+				<li><span>文字</span></li>
+				<li><img src="./images/0001.png" alt=""></li>
+				<li><img src="./images/0002.png" alt=""></li>
+				<li><img src="./images/0003.png" alt=""></li>
+				<li><img src="./images/0004.png" alt=""></li>
+				<li><img src="./images/0005.png" alt=""></li>
+				<li><img src="./images/0006.png" alt=""></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/scroll.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			$('.scroll').scroll({
+				speed: 40, //数值越大，速度越快
+				direction: 'horizantal'
+			});
+		});
+	</script>
+	</div>
+	<div class="more" aos="flip-up">
+		<div class="project-list">
+			<div class="project">
+				<div class="project__card">
+					<a href="gyyq.html" class="project__image"><img src="images/more/gyyq.jpeg" width=300 height=300 alt=""></a>
+					<div class="project__detail">
+						<h2 class="project__title"><a href="gyyq.html">关于疫情</a></h2>
+						<small class="project__category"><a href="gyyq.html">Photography</a></small>
+					</div>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project__card">
+					<a href="kyyx.html" class="project__image"><img src="images/more/kyyx.jpeg" width=300 height=300 alt=""></a>
+					<div class="project__detail">
+						<h2 class="project__title"><a href="kyyx.html">抗疫英雄</a></h2>
+						<small class="project__category"><a href="kyyx.html">Photography</a></small>
+					</div>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project__card">
+					<a href="wyzp.html" class="project__image"><img src="images/more/kyzp.jpeg" width=300 height=300 alt=""></a>
+					<div class="project__detail">
+						<h2 class="project__title"><a href="wyzp.html">文艺作品</a></h2>
+						<small class="project__category"><a href="wyzp.html">Photography</a></small>
+					</div>
+				</div>
+			</div>
+			<div class="project">
+				<div class="project__card">
+					<a href="ssdt.html" class="project__image"><img src="images/more/ssdt.png" width=300 height=300 alt=""></a>
+					<div class="project__detail">
+						<h2 class="project__title"><a href="ssdt.html">实时动态</a></h2>
+						<small class="project__category"><a href="ssdt.html">Photography</a></small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div class="foot mg2 bai cen xi14">版权所有：all right reserved</div>
+
+	<script>
+//	myIndexScroll($('.container'),'fadeInUpBig slow',);
+	$(".outbox").xs999(11);
+	$(".concernbox").xs999(4);
+	$("#menu").xs999(1);
+</script>
+<script type="text/javascript" src="/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="smohan.fixednav.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#menu").sticky({topSpacing:0});
+  });
+</script>
+<script>
+AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-sine',
+  delay: 100,
+});
+</script>
+<script src="js/jquery.hover3d.js" ></script>
+	<script>
+		$(document).ready(function(){
+			$(".project").hover3d({
+				selector: ".project__card",
+				shine: true,
+			});
+
+			$(".movie").hover3d({
+				selector: ".movie__card",
+				shine: true,
+				sensitivity: 20,
+			});
+		});
+
+	</script>
+</body>
+</html>
