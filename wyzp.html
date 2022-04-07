@@ -2,17 +2,19 @@
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8" />
-<title>全球抗疫 共渡难关</title>
+<title>郑州大学防疫专题网站</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/allan:n7:default.js" type="text/javascript"></script>
+<link href="css/aos.css" rel="stylesheet" type="text/css" />
+<script src="js/aos.js"></script>
 </head>
 
 <body>
 <div class="topz mg2">
 	<div class="top mg">
-		<div class="topl f"><a href=""><img align="absmiddle" src="images/index_04.jpg" /></a></div>
+		<div class="topl f"><a href=""><img align="absmiddle" src="images/title.png" /></a></div>
 		<div class="topr r xi24 bai">
 			<ul>
 				<li><a href="index.html">首页</a></li>
@@ -25,9 +27,9 @@
 	</div>
 </div>
 <div class="banner mg2"></div>
-<div class="gyyq1 mg cen"><img align="absmiddle" src="images/wyzp_03.jpg" /></div>
-<div class="wyzp1 mg xi40 cen hong">海报设计</div>
-<div class="wyzp2 mg">
+<div class="gyyq1 mg cen" aod="fade-in"><img align="absmiddle" src="images/wyzp_03.jpg" /></div>
+<div class="wyzp1 mg xi40 cen hong" aos="fade-in">海报设计</div>
+<div class="wyzp2 mg" aos="fade-in">
 	<ul>
 		<li><a href="images/001.jpg" target="_blank"><img align="absmiddle" src="images/wyzp_07.jpg" /></a></li>
 		<li><a href="images/002.jpg" target="_blank"><img align="absmiddle" src="images/wyzp_09.jpg" /></a></li>
@@ -39,8 +41,8 @@
 		<li><a href="images/008.jpg" target="_blank"><img align="absmiddle" src="images/wyzp_22.jpg" /></a></li>
 	</ul>
 </div>
-<div class="wyzp1 mg xi40 cen hong">视频作品</div>
-<div class="wyzp3 mg">
+<div class="wyzp1 mg xi40 cen hong" aos="fade-in">视频作品</div>
+<div class="wyzp3 mg" aos="fade-in">
 	<ul>
 		<li><a href="media/1.mp4" target="_blank"><img align="absmiddle" src="images/wyzp_28.jpg" /></a></li>
 		<li><a href="media/1.mp4" target="_blank"><img align="absmiddle" src="images/wyzp_30.jpg" /></a></li>
@@ -54,4 +56,12 @@
 </div>
 <div class="foot mg2 bai cen xi14">版权所有：全球抗疫 共渡难关</div>
 </body>
+<script>
+AOS.init({
+  offset: 200,
+  duration: 600,
+  easing: 'ease-in-sine',
+  delay: 100,
+});
+</script>
 </html>
